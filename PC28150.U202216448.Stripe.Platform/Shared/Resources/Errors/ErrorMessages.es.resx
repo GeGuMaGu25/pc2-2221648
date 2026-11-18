@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <data name="GenericError" xml:space="preserve">
+    <value>Ocurrió un error.</value>
+  </data>
+    <data name="OperationCancelled" xml:space="preserve">
+    <value>La operación fue cancelada.</value>
+  </data>
+    <data name="BillingError.PaymentMandateNotFound" xml:space="preserve">
+    <value>Mandato de pago no encontrado.</value>
+  </data>
+    <data name="BillingError.DuplicateMandateReference" xml:space="preserve">
+    <value>Ya existe un mandato de pago con la misma referencia de mandato.</value>
+  </data>
+    <data name="BillingError.InvalidMandateReference" xml:space="preserve">
+    <value>La referencia del mandato debe ser un GUID no vacío.</value>
+  </data>
+    <data name="BillingError.InvalidMerchantId" xml:space="preserve">
+    <value>El id del comercio debe ser un GUID no vacío.</value>
+  </data>
+    <data name="BillingError.InvalidEffectiveWindow" xml:space="preserve">
+    <value>La fecha de fin de vigencia debe ser posterior a la fecha de inicio de vigencia.</value>
+  </data>
+    <data name="BillingError.InvalidMonetaryAmountValue" xml:space="preserve">
+    <value>El valor del límite autorizado debe ser mayor o igual a cero.</value>
+  </data>
+    <data name="BillingError.InvalidMonetaryAmountCurrency" xml:space="preserve">
+    <value>La moneda del límite autorizado no debe ser nula ni estar en blanco.</value>
+  </data>
+    <data name="BillingError.InvalidMandateStatus" xml:space="preserve">
+    <value>El estado del mandato no es válido. Los valores permitidos son Pending, Active o Expired.</value>
+  </data>
+    <data name="BillingError.OperationCancelled" xml:space="preserve">
+    <value>La operación de facturación fue cancelada.</value>
+  </data>
+    <data name="BillingError.DatabaseError" xml:space="preserve">
+    <value>Ocurrió un error de base de datos durante la operación de facturación.</value>
+  </data>
+    <data name="BillingError.InternalServerError" xml:space="preserve">
+    <value>Ocurrió un error interno inesperado en Facturación.</value>
+  </data>
+</root>

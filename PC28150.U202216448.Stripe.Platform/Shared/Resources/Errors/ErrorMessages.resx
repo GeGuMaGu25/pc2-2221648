@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <data name="GenericError" xml:space="preserve">
+    <value>An error occurred.</value>
+  </data>
+    <data name="OperationCancelled" xml:space="preserve">
+    <value>The operation was cancelled.</value>
+  </data>
+    <data name="BillingError.PaymentMandateNotFound" xml:space="preserve">
+    <value>Payment mandate not found.</value>
+  </data>
+    <data name="BillingError.DuplicateMandateReference" xml:space="preserve">
+    <value>A payment mandate with the same mandate reference already exists.</value>
+  </data>
+    <data name="BillingError.InvalidMandateReference" xml:space="preserve">
+    <value>The mandate reference must be a non-empty GUID.</value>
+  </data>
+    <data name="BillingError.InvalidMerchantId" xml:space="preserve">
+    <value>The merchant id must be a non-empty GUID.</value>
+  </data>
+    <data name="BillingError.InvalidEffectiveWindow" xml:space="preserve">
+    <value>The validity end date must be later than the validity start date.</value>
+  </data>
+    <data name="BillingError.InvalidMonetaryAmountValue" xml:space="preserve">
+    <value>The authorized limit value must be greater than or equal to zero.</value>
+  </data>
+    <data name="BillingError.InvalidMonetaryAmountCurrency" xml:space="preserve">
+    <value>The authorized limit currency must not be null or blank.</value>
+  </data>
+    <data name="BillingError.InvalidMandateStatus" xml:space="preserve">
+    <value>The mandate status is not valid. Allowed values are Pending, Active or Expired.</value>
+  </data>
+    <data name="BillingError.OperationCancelled" xml:space="preserve">
+    <value>Billing operation was cancelled.</value>
+  </data>
+    <data name="BillingError.DatabaseError" xml:space="preserve">
+    <value>A database error occurred during billing operation.</value>
+  </data>
+    <data name="BillingError.InternalServerError" xml:space="preserve">
+    <value>An unexpected internal error occurred in Billing.</value>
+  </data>
+</root>

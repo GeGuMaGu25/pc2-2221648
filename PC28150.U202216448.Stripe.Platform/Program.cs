@@ -1,3 +1,7 @@
+using PC28150.U202216448.Stripe.Platform.Billing.Application.CommandServices;
+using PC28150.U202216448.Stripe.Platform.Billing.Application.Internal.CommandServices;
+using PC28150.U202216448.Stripe.Platform.Billing.Domain.Repositories;
+using PC28150.U202216448.Stripe.Platform.Billing.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
 using PC28150.U202216448.Stripe.Platform.Resources.Errors;
 using PC28150.U202216448.Stripe.Platform.Resources.Shared;
 using PC28150.U202216448.Stripe.Platform.Shared.Domain.Repositories;
@@ -67,6 +71,9 @@ builder.Services.AddOpenApi();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<DispatchDomainEventsInterceptor>();
 
+// Billing Bounded Context
+builder.Services.AddScoped<IPaymentMandateRepository, PaymentMandateRepository>();
+builder.Services.AddScoped<IPaymentMandateCommandService, PaymentMandateCommandService>();
 
 // Mediator Configuration
 

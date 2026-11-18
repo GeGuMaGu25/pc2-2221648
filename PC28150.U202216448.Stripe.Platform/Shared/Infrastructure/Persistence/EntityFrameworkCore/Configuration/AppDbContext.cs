@@ -1,3 +1,4 @@
+using PC28150.U202216448.Stripe.Platform.Billing.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
 using PC28150.U202216448.Stripe.Platform.Shared.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
 using PC28150.U202216448.Stripe.Platform.Shared.Infrastructure.Persistence.EntityFrameworkCore.Interceptors;
 using Microsoft.EntityFrameworkCore;
@@ -35,6 +36,9 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
+
+        // Billing Context
+        builder.ApplyBillingConfiguration();
 
         // General Naming Convention for the database objects
         builder.UseSnakeCaseNamingConvention();
